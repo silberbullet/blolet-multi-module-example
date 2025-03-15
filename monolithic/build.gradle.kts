@@ -15,10 +15,10 @@ java {
 
 dependencies {
     // module
-    implementation(project(":nettee-exception-handler-core"))
+    implementation(project(":exceptionHandlerCore"))
     implementation(project(":boardApplication"))
     implementation(project(":boardDrivenRdbJpa"))
-    implementation(project(":boardDrivingWeb"))
+    implementation(project(":boardDrivingWebMvc"))
 
     // spring
     implementation("org.springframework.boot:spring-boot-starter-web")
