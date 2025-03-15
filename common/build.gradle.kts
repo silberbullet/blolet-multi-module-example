@@ -1,5 +1,11 @@
+plugins{
+    `java-library`
+}
+
 version = "0.0.1-SNAPSHOT"
 
 dependencies {
-    implementation("org.springframework:spring-web")
+    api("org.springframework:spring-web")
+    // lombok
+    api("org.projectlombok:lombok")
 }
