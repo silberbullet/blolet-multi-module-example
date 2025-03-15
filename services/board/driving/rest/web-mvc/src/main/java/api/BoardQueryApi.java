@@ -1,3 +1,5 @@
+package api;
+
 import dto.BoardQueryDto.BoardDetailResponse;
 import lombok.RequiredArgsConstructor;
 

@@ -1,3 +1,5 @@
+package api;
+
 import dto.BoardCommandDto.BoardUpdateCommand;
 import dto.BoardCommandDto.BoardCreateCommand;
 import dto.BoardCommandDto.BoardCommandResponse;

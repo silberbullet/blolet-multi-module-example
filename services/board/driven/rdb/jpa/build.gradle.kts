@@ -2,7 +2,7 @@ version = "0.0.1-SNAPSHOT"
 
 dependencies {
     implementation(project(":common"))
-    implementation(project(":nettee-jpa-core"))
+    implementation(project(":jpaCore"))
     implementation(project(":boardApplication"))
 
     // spring

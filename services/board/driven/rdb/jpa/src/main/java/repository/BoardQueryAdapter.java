@@ -1,3 +1,5 @@
+package repository;
+
 import static entity.QBoardEntity.boardEntity;
 
 import entity.BoardEntity;

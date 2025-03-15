@@ -1,3 +1,5 @@
+package repository;
+
 import domain.Board;
 import entity.type.BoardEntityStatus;
 import lombok.RequiredArgsConstructor;
