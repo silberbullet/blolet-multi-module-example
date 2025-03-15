@@ -1,3 +1,4 @@
 rootProject.name = "blolet"
 
-include(":monolithic")
+include("monolithic")
+include("common")
