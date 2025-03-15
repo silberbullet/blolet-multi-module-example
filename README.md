@@ -36,7 +36,7 @@ graph TD;
     
     boardApi:readmodel --> boardApi:domain;
     
-    boardApi --> boardApi:domain];
+    boardApi --> boardApi:domain;
     boardApi --> boardApi:exception;
     boardApi --> boardApi:readmodel;
     
