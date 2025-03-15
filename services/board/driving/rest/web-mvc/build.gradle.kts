@@ -1,7 +1,6 @@
 version = "0.0.1-SNAPSHOT"
 
 dependencies {
-    implementation(project(":common"))
     implementation(project(":boardApplication"))
 
     // spring
@@ -14,6 +13,7 @@ dependencies {
     annotationProcessor("org.mapstruct:mapstruct-processor:1.6.3")
     annotationProcessor("org.projectlombok:lombok-mapstruct-binding:0.2.0")
 
+    // lombok
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
 }

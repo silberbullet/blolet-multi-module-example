@@ -5,8 +5,11 @@ plugins {
 version = "0.0.1-SNAPSHOT"
 
 dependencies {
-    implementation(project(":common"))
     api("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    // lombok
+    compileOnly("org.projectlombok:lombok")
+    annotationProcessor("org.projectlombok:lombok")
 
     // querydsl
     implementation("com.querydsl:querydsl-jpa:${dependencyManagement.importedProperties["querydsl.version"]}:jakarta")
