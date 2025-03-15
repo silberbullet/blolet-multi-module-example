@@ -7,22 +7,22 @@
 blolet
 ├─common
 ├─core
-│  ├─nettee-exception-handler-core
-│  └─nettee-jpa-core
+│  ├─nettee-exception-handler-core [exceptionHandlerCore]
+│  └─nettee-jpa-core [jpaCore]
 ├─monolithic
 └─services
     └─board
-        ├─api
-        │  ├─domain
-        │  ├─exception
-        │  └─readmodel
-        ├─application
+        ├─api [boardApi]
+        │  ├─domain [boardApi:domain]
+        │  ├─exception [boardApi:exception]
+        │  └─readmodel [boardApi:readmodel]
+        ├─application  [boardApplication]
         ├─driven
         │  └─rdb
-        │      └─jpa
+        │      └─jpa  [boardDrivenRdbJpa]
         └─driving
             └─rest
-                └─web-mvc
+                └─web-mvc [boardDrivingWebMvc]
 ```
 
 ## 🐋 모듈 관계도
@@ -31,23 +31,24 @@ blolet
 
 ```mermaid
 graph TD;
-    nettee-exception-handler-core --> common;
-    service/board/api/exception --> common;
+    exceptionHandlerCore --> common;
+    boardApi:exception --> common;
     
-    service/board/api/readmodel --> service/board/api/domain;
+    boardApi:readmodel --> boardApi:domain;
     
-    service/board/api --> service/board/api/domain;
-    service/board/api --> service/board/api/exception;
-    service/board/api --> service/board/api/readmodel;
+    boardApi --> boardApi:domain];
+    boardApi --> boardApi:exception;
+    boardApi --> boardApi:readmodel;
     
-    service/board/application --> service/board/api;
+    boardApplication --> boardApi;
     
-    service/board/driven/rdb/jpa --> nettee-jpa-core;
-    service/board/driven/rdb/jpa --> service/board/application;
-    service/board/driving/rest/web-mvc --> service/board/application;
+    boardDrivenRdbJpa --> jpaCore;
+    boardDrivenRdbJpa --> boardApplication;
 
-    monolithic --> service/board/application;
-    monolithic --> service/board/driven/rdb/jpa 
-    monolithic --> service/board/driving/rest/web-mvc
-    monolithic --> nettee-exception-handler-core 
+    boardDrivingWebMvc --> boardApplication;
+
+    monolithic --> boardApplication;
+    monolithic --> boardDrivenRdbJpa
+    monolithic --> boardDrivingWebMvc 
+    monolithic --> exceptionHandlerCore
 ```
