@@ -1,6 +1,6 @@
 plugins {
-    id("org.springframework.boot") version "3.4.3"
-    id("io.spring.dependency-management") version "1.1.7"
+    id("org.springframework.boot")
+    id("io.spring.dependency-management")
 }
 
 version = "0.0.1-SNAPSHOT"
@@ -14,6 +14,13 @@ java {
 }
 
 dependencies {
+    // module
+    implementation(project(":nettee-exception-handler-core"))
+    implementation(project(":boardApplication"))
+    implementation(project(":boardDrivenRdbJpa"))
+    implementation(project(":boardDrivingWeb"))
+
+    // spring
     implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
