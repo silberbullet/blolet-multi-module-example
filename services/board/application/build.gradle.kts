@@ -6,9 +6,7 @@ version = "0.0.1-SNAPSHOT"
 
 dependencies {
     implementation(project(":common"))
-    api(project(":boardApi:domain"))
-    api(project(":boardApi:exception"))
-    api(project(":boardApi:readmodel"))
+    implementation(project(":boardApi"))
 
     // spring
     implementation("org.springframework:spring-context")
