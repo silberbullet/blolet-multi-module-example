@@ -6,6 +6,4 @@ version = "0.0.1-SNAPSHOT"
 
 dependencies {
     api("org.springframework:spring-web")
-    // lombok
-    api("org.projectlombok:lombok")
 }
