@@ -1,8 +1,3 @@
-plugins {
-    id("org.springframework.boot")
-    id("io.spring.dependency-management")
-}
-
 version = "0.0.1-SNAPSHOT"
 
 java {
@@ -15,12 +10,11 @@ java {
 
 dependencies {
     // module
-    implementation(project(":exceptionHandlerCore"))
-    implementation(project(":boardApplication"))
-    implementation(project(":boardDrivenRdbJpa"))
-    implementation(project(":boardDrivingWebMvc"))
-
-    // spring
+    implementation(project(":exception-handler-core"))
+    implementation(project(":board-application"))
+    implementation(project(":board-rdb-postgresql-adapter"))
+    implementation(project(":board-rest-webmvc-adapter"))
+    //spring
     implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")

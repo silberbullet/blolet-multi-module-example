@@ -5,7 +5,7 @@ plugins{
 version = "0.0.1-SNAPSHOT"
 
 dependencies {
-    api(project(":boardApi"))
+    api(project(":board-api"))
 
     // spring
     implementation("org.springframework:spring-context")

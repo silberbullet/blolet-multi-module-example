@@ -1,8 +1,8 @@
 version = "0.0.1-SNAPSHOT"
 
 dependencies {
-    implementation(project(":jpaCore"))
-    implementation(project(":boardApplication"))
+    implementation(project(":jpa-core"))
+    implementation(project(":board-application"))
 
     // spring
     implementation("org.springframework:spring-context")

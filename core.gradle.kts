@@ -2,9 +2,9 @@ val core = file("core").walkTopDown().maxDepth(3).filter(File::isDirectory).asso
 
 // CORE
 include(
-    "exceptionHandlerCore"
-    ,"jpaCore"
+    "exception-handler-core"
+    ,"jpa-core"
 )
 
-project(":exceptionHandlerCore").projectDir = core["nettee-exception-handler-core"]!!
-project(":jpaCore"             ).projectDir = core["nettee-jpa-core"]!!
+project(":exception-handler-core").projectDir = core["nettee-exception-handler-core"]!!
+project(":jpa-core"             ).projectDir = core["nettee-jpa-core"]!!

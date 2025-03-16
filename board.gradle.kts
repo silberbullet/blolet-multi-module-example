@@ -2,19 +2,19 @@ val board = file("services/board").walkTopDown().maxDepth(3).filter(File::isDire
 
 // SERVICE/BOARD
 include(
-    "boardApi"
-    ,"boardApi:domain"
-    ,"boardApi:exception"
-    ,"boardApi:readmodel"
-    ,"boardApplication"
-    ,"boardDrivenRdbJpa"
-    ,"boardDrivingWebMvc"
+    "board-api"
+    ,"board-api:domain"
+    ,"board-api:exception"
+    ,"board-api:readmodel"
+    ,"board-application"
+    ,"board-rdb-postgresql-adapter"
+    ,"board-rest-webmvc-adapter"
 )
 
-project(":boardApi"          ).projectDir = board["api"]!!
-project(":boardApi:domain"   ).projectDir = board["domain"]!!
-project(":boardApi:exception").projectDir = board["exception"]!!
-project(":boardApi:readmodel").projectDir = board["readmodel"]!!
-project(":boardApplication"  ).projectDir = board["application"]!!
-project(":boardDrivenRdbJpa" ).projectDir = board["jpa"]!!
-project(":boardDrivingWebMvc").projectDir = board["web-mvc"]!!
+project(":board-api"                   ).projectDir = board["api"]!!
+project(":board-api:domain"            ).projectDir = board["domain"]!!
+project(":board-api:exception"         ).projectDir = board["exception"]!!
+project(":board-api:readmodel"         ).projectDir = board["readmodel"]!!
+project(":board-application"           ).projectDir = board["application"]!!
+project(":board-rdb-postgresql-adapter").projectDir = board["jpa"]!!
+project(":board-rest-webmvc-adapter"   ).projectDir = board["web-mvc"]!!

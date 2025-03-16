@@ -1,13 +1,13 @@
-package me.nettee.monolithic;
+package me.nettee.client;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MonolithicApplicationTests {
-
+class ClientApplicationTests {
+    
     @Test
     void contextLoads() {
     }
-
+    
 }

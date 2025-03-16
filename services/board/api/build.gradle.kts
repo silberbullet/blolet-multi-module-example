@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    api(project(":boardApi:domain"))
-    api(project(":boardApi:exception"))
-    api(project(":boardApi:readmodel"))
+    api(project(":board-api:domain"))
+    api(project(":board-api:exception"))
+    api(project(":board-api:readmodel"))
 }
