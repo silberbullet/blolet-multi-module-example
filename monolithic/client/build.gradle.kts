@@ -13,9 +13,9 @@ java {
 dependencies {
     // module
     implementation(project(":exception-handler-core"))
-    implementation(project(":board-application"))
-    implementation(project(":board-rdb-postgresql-adapter"))
-    implementation(project(":board-rest-webmvc-adapter"))
+    implementation(project(":jpa-core"))
+    implementation(project(":board-service"))
+
     //spring
     implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
