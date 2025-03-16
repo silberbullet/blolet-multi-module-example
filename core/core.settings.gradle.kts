@@ -1,4 +1,4 @@
-val core = file("core").walkTopDown().maxDepth(3).filter(File::isDirectory).associateBy(File::getName)
+val core = rootDir.resolve("core").walkTopDown().maxDepth(3).filter(File::isDirectory).associateBy(File::getName)
 
 // CORE
 include(

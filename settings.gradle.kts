@@ -7,6 +7,6 @@ include(
 
 project(":monolithic-client").projectDir = file("monolithic/client")
 
-apply(from ="core.gradle.kts")
-apply(from ="board.gradle.kts")
+apply(from ="core/core.settings.gradle.kts")
+apply(from ="services/board/board.settings.gradle.kts")
 

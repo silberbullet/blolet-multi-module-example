@@ -1,4 +1,4 @@
-val board = file("services/board").walkTopDown().maxDepth(3).filter(File::isDirectory).associateBy(File::getName)
+val board = rootDir.resolve("services").resolve("board").walkTopDown().maxDepth(3).filter(File::isDirectory).associateBy(File::getName)
 
 // SERVICE/BOARD
 include(
