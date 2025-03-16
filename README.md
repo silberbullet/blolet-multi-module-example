@@ -44,11 +44,14 @@ graph TD;
     
     board-postgresql-rdb-adapter --> jpa-core;
     board-postgresql-rdb-adapter --> board-application;
-
+    
     board-rest-webmvc-adapter  --> board-application;
+        
+    board-service --> board-api 
+    board-service --> board-postgresql-rdb-adapter
+    board-service --> board-rest-webmvc-adapter 
 
-    monolithic-client --> board-application;
-    monolithic-client --> board-postgresql-rdb-adapter
-    monolithic-client --> board-rest-webmvc-adapter 
+    monolithic-client --> board-service 
     monolithic-client --> exception-handler-core 
+    monolithic-client --> jpa-core
 ```
