@@ -16,5 +16,5 @@ project(":board-api:domain"            ).projectDir = board["domain"]!!
 project(":board-api:exception"         ).projectDir = board["exception"]!!
 project(":board-api:readmodel"         ).projectDir = board["readmodel"]!!
 project(":board-application"           ).projectDir = board["application"]!!
-project(":board-rdb-postgresql-adapter").projectDir = board["jpa"]!!
+project(":board-rdb-postgresql-adapter").projectDir = board["postgresql"]!!
 project(":board-rest-webmvc-adapter"   ).projectDir = board["web-mvc"]!!
