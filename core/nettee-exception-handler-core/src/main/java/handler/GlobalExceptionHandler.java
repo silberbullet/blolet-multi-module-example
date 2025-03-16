@@ -1,3 +1,5 @@
+package handler;
+
 import exception.CustomException;
 import exception.ErrorCode;
 import org.springframework.http.ResponseEntity;
