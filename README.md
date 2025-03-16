@@ -45,7 +45,7 @@ graph TD;
     board-postgresql-rdb-adapter --> jpa-core;
     board-postgresql-rdb-adapter --> board-application;
 
-    boardDrivingWebMvc --> board-application;
+    board-rest-webmvc-adapter  --> board-application;
 
     monolithic-client --> board-application;
     monolithic-client --> board-postgresql-rdb-adapter
