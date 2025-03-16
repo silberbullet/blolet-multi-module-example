@@ -7,22 +7,22 @@
 blolet
 ├─common
 ├─core
-│  ├─nettee-exception-handler-core [exceptionHandlerCore]
-│  └─nettee-jpa-core [jpaCore]
+│  ├─nettee-exception-handler-core [exception-handler-core]
+│  └─nettee-jpa-core [jpa-core]
 ├─monolithic
 └─services
     └─board
-        ├─api [boardApi]
-        │  ├─domain [boardApi:domain]
-        │  ├─exception [boardApi:exception]
-        │  └─readmodel [boardApi:readmodel]
-        ├─application  [boardApplication]
+        ├─api [board-api]
+        │  ├─domain [board-api:domain]
+        │  ├─exception [board-api:exception]
+        │  └─readmodel [board-api:readmodel]
+        ├─application  [board-application]
         ├─driven
         │  └─rdb
-        │      └─jpa  [boardDrivenRdbJpa]
+        │      └─jpa  [board-postgresql-rdb-adapter]
         └─driving
             └─rest
-                └─web-mvc [boardDrivingWebMvc]
+                └─web-mvc [board-rest-webmvc-adapter]
 ```
 
 ## 🐋 모듈 관계도
@@ -31,24 +31,24 @@ blolet
 
 ```mermaid
 graph TD;
-    exceptionHandlerCore --> common;
-    boardApi:exception --> common;
+    exception-handler-core --> common;
+    board-api:exception --> common;
     
-    boardApi:readmodel --> boardApi:domain;
+    board-api:readmodel --> board-api:domain;
     
-    boardApi --> boardApi:domain;
-    boardApi --> boardApi:exception;
-    boardApi --> boardApi:readmodel;
+    board-api --> board-api:domain;
+    board-api --> board-api:exception;
+    board-api --> board-api:readmodel;
     
-    boardApplication --> boardApi;
+    board-application --> board-api;
     
-    boardDrivenRdbJpa --> jpaCore;
-    boardDrivenRdbJpa --> boardApplication;
+    board-postgresql-rdb-adapter --> jpa-core;
+    board-postgresql-rdb-adapter --> board-application;
 
-    boardDrivingWebMvc --> boardApplication;
+    boardDrivingWebMvc --> board-application;
 
-    monolithic --> boardApplication;
-    monolithic --> boardDrivenRdbJpa
-    monolithic --> boardDrivingWebMvc 
-    monolithic --> exceptionHandlerCore
+    monolithic-client --> board-application;
+    monolithic-client --> board-postgresql-rdb-adapter
+    monolithic-client --> board-rest-webmvc-adapter 
+    monolithic-client --> exception-handler-core 
 ```
