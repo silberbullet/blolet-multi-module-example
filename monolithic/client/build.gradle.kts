@@ -1,3 +1,5 @@
+import org.springframework.boot.gradle.tasks.bundling.BootJar
+
 version = "0.0.1-SNAPSHOT"
 
 java {
@@ -22,4 +24,12 @@ dependencies {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+tasks.withType<BootJar>{
+    enabled = true
+}
+
+tasks.withType<Jar>{
+    enabled = false
 }
