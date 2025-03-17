@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import me.nettee.BoardQueryModels.BoardSummary;
 import me.nettee.type.BoardStatus;
-import me.netttee.usecase.BoardReadByStatusesUseCase;
-import me.netttee.usecase.BoardReadUseCase;
+import me.nettee.usecase.BoardReadByStatusesUseCase;
+import me.nettee.usecase.BoardReadUseCase;
 
 import java.util.Set;
 

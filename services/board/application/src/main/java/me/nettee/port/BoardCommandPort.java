@@ -1,4 +1,4 @@
-package me.netttee.port;
+package me.nettee.port;
 
 import me.nettee.type.BoardStatus;
 import me.nettee.Board;

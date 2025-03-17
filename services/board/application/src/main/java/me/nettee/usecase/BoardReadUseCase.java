@@ -1,4 +1,4 @@
-package me.netttee.usecase;
+package me.nettee.usecase;
 
 import me.nettee.BoardQueryModels.BoardDetail;
 

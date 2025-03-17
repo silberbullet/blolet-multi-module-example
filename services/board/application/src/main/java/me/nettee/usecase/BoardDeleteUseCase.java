@@ -1,4 +1,4 @@
-package me.netttee.usecase;
+package me.nettee.usecase;
 
 public interface BoardDeleteUseCase {
 

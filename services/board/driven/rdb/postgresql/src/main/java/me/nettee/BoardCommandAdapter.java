@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 import me.nettee.mapper.BoardEntityMapper;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Repository;
-import me.netttee.port.BoardCommandPort;
+import me.nettee.port.BoardCommandPort;
 import me.nettee.type.BoardStatus;
 
 import java.util.Optional;

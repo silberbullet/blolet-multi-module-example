@@ -1,14 +1,14 @@
-package me.netttee.service;
+package me.nettee.service;
 
 import me.nettee.Board;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.stereotype.Service;
-import me.netttee.port.BoardCommandPort;
+import me.nettee.port.BoardCommandPort;
 import me.nettee.type.BoardStatus;
-import me.netttee.usecase.BoardCreateUseCase;
-import me.netttee.usecase.BoardDeleteUseCase;
-import me.netttee.usecase.BoardUpdateUseCase;
+import me.nettee.usecase.BoardCreateUseCase;
+import me.nettee.usecase.BoardDeleteUseCase;
+import me.nettee.usecase.BoardUpdateUseCase;
 
 import static me.nettee.BoardCommandErrorCode.BOARD_NOT_FOUND;
 import static me.nettee.BoardCommandErrorCode.DEFAULT;

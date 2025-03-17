@@ -1,6 +1,6 @@
 package me.nettee;
 
-import static entity.QBoardEntity.boardEntity;
+import static me.nettee.entity.QBoardEntity.boardEntity;
 
 import me.nettee.entity.BoardEntity;
 import me.nettee.entity.type.BoardEntityStatus;
@@ -10,7 +10,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.data.support.PageableExecutionUtils;
 import org.springframework.stereotype.Repository;
-import me.netttee.port.BoardQueryPort;
+import me.nettee.port.BoardQueryPort;
 import me.nettee.type.BoardStatus;
 
 import java.util.Map;

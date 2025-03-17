@@ -1,15 +1,15 @@
-package me.netttee.service;
+package me.nettee.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import me.netttee.port.BoardQueryPort;
+import me.nettee.port.BoardQueryPort;
 import me.nettee.BoardQueryModels.BoardDetail;
 import me.nettee.BoardQueryModels.BoardSummary;
 import me.nettee.type.BoardStatus;
-import me.netttee.usecase.BoardReadByStatusesUseCase;
-import me.netttee.usecase.BoardReadUseCase;
+import me.nettee.usecase.BoardReadByStatusesUseCase;
+import me.nettee.usecase.BoardReadUseCase;
 
 import java.util.Set;
 

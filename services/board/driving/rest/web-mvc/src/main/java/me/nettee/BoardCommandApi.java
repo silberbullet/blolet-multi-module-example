@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import me.netttee.usecase.BoardCreateUseCase;
-import me.netttee.usecase.BoardDeleteUseCase;
-import me.netttee.usecase.BoardUpdateUseCase;
+import me.nettee.usecase.BoardCreateUseCase;
+import me.nettee.usecase.BoardDeleteUseCase;
+import me.nettee.usecase.BoardUpdateUseCase;
 
 @RestController
 @RequestMapping("/api/v1/boards")

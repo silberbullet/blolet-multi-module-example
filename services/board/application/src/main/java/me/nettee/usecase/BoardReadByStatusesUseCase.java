@@ -1,4 +1,4 @@
-package me.netttee.usecase;
+package me.nettee.usecase;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
