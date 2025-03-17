@@ -21,12 +21,3 @@ dependencies {
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
 }
-
-tasks.processResources {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE // 또는 DuplicatesStrategy.WARN 사용 가능
-
-    from("src/main/resources") {
-        include("web-local.yml") // 로컬 환경 설정
-        include("web-dev.yml")   // 개발 환경 설정
-    }
-}

@@ -32,16 +32,3 @@ dependencies {
     annotationProcessor("jakarta.persistence:jakarta.persistence-api")
     annotationProcessor("jakarta.annotation:jakarta.annotation-api")
 }
-
-tasks.processResources {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE // 또는 DuplicatesStrategy.WARN 사용 가능
-
-    from("src/main/resources") {
-        include("db-local.yml") // 로컬 환경 설정
-        include("db-dev.yml")   // 개발 환경 설정
-    }
-
-    from("src/main/resources/db.migration.v1_0") {
-        into("db/migration/v1_0")
-    }
-}
