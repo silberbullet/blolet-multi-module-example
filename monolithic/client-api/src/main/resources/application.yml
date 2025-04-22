@@ -1,5 +1,10 @@
 spring:
   application:
     name: client
+  config:
+      import:
+        - board.yml
+
 server:
   port: 5000
+
