@@ -1,5 +1,0 @@
-spring:
-  config:
-    import:
-      - db-local.yml
-      - web-local.yml
