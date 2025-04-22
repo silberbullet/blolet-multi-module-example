@@ -2,7 +2,7 @@ val board = rootDir.resolve("services").resolve("board").walkTopDown().maxDepth(
 
 // SERVICE/BOARD
 include(
-     "board-service"
+     "board"
     ,"board-api"
     ,"board-api:domain"
     ,"board-api:exception"
@@ -12,7 +12,7 @@ include(
     ,"board-rest-webmvc-adapter"
 )
 
-project(":board-service"               ).projectDir = board["board"]!!
+project(":board"                       ).projectDir = board["board"]!!
 project(":board-api"                   ).projectDir = board["api"]!!
 project(":board-api:domain"            ).projectDir = board["domain"]!!
 project(":board-api:exception"         ).projectDir = board["exception"]!!
