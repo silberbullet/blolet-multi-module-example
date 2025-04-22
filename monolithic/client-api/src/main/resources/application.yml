@@ -4,6 +4,7 @@ spring:
   config:
       import:
         - board.yml
+        - properties.web/client.cors.yml
 
 server:
   port: 5000
